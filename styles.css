@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202733;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+main {
+    position: relative;
+    background: url(./images/pattern-divider-mobile.svg) no-repeat center calc(100% - 64px), #313A48;  
+    font-family: 'Manrope', sans-serif; 
+    font-weight: 800;    
+    text-align: center;
+    color: #CEE3E9; 
+    border-radius: 10px;
+    padding: 40px 24px 104px;
+    max-width: 540px;
+    margin: 0 16px;
+}
+
+h1 {
+    color: #53FFAA;
+    line-height: 15px;
+    font-size: 11px;
+    letter-spacing: 3.5px;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: -0.26px;
+}
+
+button {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    bottom: -32px;
+    left: 50%;
+    margin-left: -32px;
+    border-radius: 50%;
+    background-color: #53FFAA;
+    transition: ease all 0.3s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 40px #53FFAA;
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        align-items: center;
+        padding-top: 0;
+    } 
+    
+    main {
+        background: url(./images/pattern-divider-desktop.svg) no-repeat center calc(100% - 72px), #313A48; 
+        padding: 48px 48px 128px;
+        margin: 0;
+    }
+
+    h1 {
+        color: #53FFAA;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: 4.1px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: -0.3px;
+    }
+}
